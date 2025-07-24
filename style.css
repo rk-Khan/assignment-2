@@ -1,0 +1,190 @@
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/* shared style */
+.flex{
+    display: flex;
+}
+.width{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.text-gray{
+    color: rgba(137, 135, 161, 1.00);
+}
+.text-orange{
+    color: rgb(233, 90, 8);
+}
+.btn-primary{
+    background-color:rgb(233, 90, 8);
+    color: white;
+    border: none;
+    width: 95%;
+    margin: 0 10px;
+    gap: 20px;
+    padding: 10px 0 10px 0;
+}
+
+/* Header */
+.navbar, .navbar-2{
+    justify-content: space-between;
+    align-items: center;
+}
+.ul{
+    list-style: none;
+    gap: 20px;
+}
+.li a{
+    text-decoration: none;
+    color: rgba(137, 135, 161, 1.00);
+}
+
+.navbar-2 h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.navbar-2 p{
+    font-weight: 400;
+}
+.img-1 img{
+    width: 100%;
+    height: 100%;
+}
+/* about plants*/
+.about-plants{
+    margin-bottom: 150px;
+}
+.plants-title{
+    text-align: center;
+}
+.plants-title h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.plants-title p{
+    font-size: 1.1rem;
+    font-weight: 400px;
+    margin-top: 5px;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cards{
+    text-align: center;
+    margin-top: 20px;
+}
+.cards h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.cards h4{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 12px;
+}
+/* lover section */
+.about-lover{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.badge-img{
+    width: 30%;
+    height: 30%;
+    margin-left: -130px;
+    margin-bottom: 470px;
+}
+.lover-title h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.lover-title li{
+    padding: 5px;
+}
+/* Deals */
+.deals-title{
+    text-align: center;
+}
+.deals-title h3{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+/* .deals{
+    display: flex
+}
+.deal-card-1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/deal-bloom.png);
+}
+.deal-card-2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/deal-ana.png);
+}
+.deal-card-3{
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/deal-zabo.png);
+} */
+
+@media screen and (max-width: 576px) {
+
+    .navbar, .about-lover{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navbar-2{
+        flex-direction: column-reverse;
+        margin-left: 20px;
+    }
+    .navbar-2 h2{
+        font-size: 2rem;
+    }
+    .img-1 img{
+        margin-right: none;
+        margin-top: 50px;
+    }
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards img{
+        width: calc(100% - 20%);
+    }
+    .btn-primary{
+        width: 50%;
+    }
+    .store-img{
+        width: 95%;
+        margin: 5px;
+    }
+    .badge-img{
+        display: none;
+    }
+    .lover-title h3{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .lover-title{
+        text-align: left;
+    }
+}
