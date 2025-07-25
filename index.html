@@ -16,8 +16,8 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="width">
-    <header>
+<body>
+    <header class="width">
         <nav class="flex navbar inter-font width">
             <figure><img src="./imgs/logo.png" alt=""></figure>
             <ul class="flex ul">
@@ -37,7 +37,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="width">
         <section class="about-plants">
             <div class="plants-title">
                 <h3 class="noto-serif-font"><span class="text-orange">Our</span> Plants</h3>
@@ -136,15 +136,44 @@
                 </div>
             </div>
         </section>
-        <section class="joining">
-            <div>
-                <h3>Join the colorful Bunch</h3>
-                <input type="email" name="" id="" placeholder="Write Email"><button class="sub-btn">Subscribe</button>
+    </main>
+    <section class="joining-section">
+            <div class="joining">
+                <h3 class="noto-serif-font">Join the colorful Bunch</h3>
+                <div>
+                    <input class="inter-font text-gray" type="email" name="" id="" placeholder="Write Email"><button class="sub-btn inter-font">Subscribe</button>
+                </div>
             </div>
         </section>
-    </main>
-    <footer>
-
+    <footer  class="width flex">
+        <div>
+            <img src="./imgs/logo.png" alt="">
+            <p class="text-gray inter-font">Indulge your senses with the <br> beauty and fragrance of our fresh <br>flower shop. </p>
+        </div>
+        <div class="footer-ul">
+            <ul class="ul">
+                <li class="li"><a href="">Home</a></li>
+                <li class="li"><a href="">About Us</a></li>
+                <li class="li"><a href="">Blog</a></li>
+                <li class="li"><a href="">FAQ</a></li>
+                <li class="li"><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <div  class="footer-ul">
+            <ul class="ul">
+                <li class="li"><a href="">Features</a></li>
+                <li class="li"><a href="">Pricing</a></li>
+                <li class="li"><a href="">Privacy Policy</a></li>
+                <li class="li"><a href="">Terms of Service</a></li>
+                <li class="li"><a href="">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="logos ">
+            <img src="./logos/icon-linkedin.png" alt="" class="logo-imgs">
+            <img src="./logos/icon-twitter.png" alt="" class="logo-imgs">
+            <img src="./logos/icon-facebook.png" alt="" class="logo-imgs">
+            <img src="./logos/icon-youtube.png" alt="" class="logo-imgs">
+        </div>
     </footer>
 </body>
 </html>
