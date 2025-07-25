@@ -127,24 +127,75 @@
     font-weight: 700;
     margin-bottom: 5px;
 }
-/* .deals{
-    display: flex
-}
-.deal-card-1{
-    width: 100%;
-    height: 100%;
+.bloom{
     background-image: url(./imgs/deal-bloom.png);
 }
-.deal-card-2{
-    width: 100%;
-    height: 100%;
+.ana{
     background-image: url(./imgs/deal-ana.png);
 }
-.deal-card-3{
+.zabo{
+    background-image: url(./imgs/deal-zabo.png);
+}
+.zabo h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.zabo a{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.deal-card-holder{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.left-deals{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+.deal-card{
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-width: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.deal-card.small{
+    height: 190px;
+}
+.deal-card.large{
+    flex: 2;
+    height: 400px;
+}
+.overlay{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
     width: 100%;
     height: 100%;
-    background-image: url(./imgs/deal-zabo.png);
-} */
+    align-content: center;
+}
+.overlay h3{
+    margin-bottom: 5px;
+}
+.overlay a{
+    color: white;
+}
+/* joining */
+.sub-btn{
+    background-color: rgb(233, 90, 8);
+    border: none;
+}
 
 @media screen and (max-width: 576px) {
 
@@ -186,5 +237,11 @@
     }
     .lover-title{
         text-align: left;
+    }
+    /* deals */
+    .deal-card-holder{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
